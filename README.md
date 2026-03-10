@@ -1,5 +1,17 @@
-Book Tracker App
+Project: Workout Tracker
 
-A full-stack book tracking application that allows users to register, log in, and manage their personal reading list. Users can add, update, and delete books, track reading status, and maintain notes for each book.
+Tech Stack:
+Next.js
+MongoDB
+Mongoose
+Tailwind CSS
+React Hook Form
+Zod
 
-This project is built as a modern full-stack application using Next.js with MongoDB and JWT-based authentication.
+Setup Instructions
+
+1. Clone repo
+2. npm install
+3. Create .env file
+4. Add MongoDB connection string
+5. npm run dev
