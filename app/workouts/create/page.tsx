@@ -1,3 +1,5 @@
+'use client';
+
 import WorkoutForm, { WorkoutFormValues } from '@/components/WorkoutForm';
 
 export default function CreateWorkoutPage() {
