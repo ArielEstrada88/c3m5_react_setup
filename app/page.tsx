@@ -9,7 +9,7 @@ export default function HomePage() {
         <Link href="/register" className="bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-500">
           Get Started
         </Link>
-        <Link href="/login" className="bg-gray-200 px-6 py-2 rounded hover:bg-gray-300">
+        <Link href="/login" className="bg-white text-indigo-600 px-6 py-2 rounded hover:bg-indigo-100 hover:text-indigo-700">
           Login
         </Link>
       </div>
