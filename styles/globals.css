@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* ----------------------------- */
+/* THEME VARIABLES */
+/* ----------------------------- */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -19,8 +22,72 @@
   }
 }
 
+/* ----------------------------- */
+/* BODY STYLES */
+/* ----------------------------- */
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ----------------------------- */
+/* CUSTOM ANIMATIONS */
+/* ----------------------------- */
+
+/* Run - Floating across screen */
+@keyframes runAcross {
+  0% { transform: translateX(-100%) translateY(0); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateX(110vw) translateY(0); opacity: 0; }
+}
+
+/* Lift - Minimal bounce / Bloom effect */
+@keyframes bloom {
+  0%, 100% { transform: scale(0.9); opacity: 0.7; }
+  50% { transform: scale(1.2); opacity: 1; }
+}
+
+/* Sweat - Slow gentle float up */
+@keyframes floatUp {
+  0% { transform: translateY(0); opacity: 0.6; }
+  50% { transform: translateY(-20px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 0.6; }
+}
+
+/* WIN - Magical jumpscare / reappearing */
+@keyframes jumpscare {
+  0%, 70%, 100% { opacity: 0; transform: scale(0.5); }
+  75% { opacity: 1; transform: scale(1.5); }
+  80% { opacity: 1; transform: scale(1); }
+}
+
+/* Achieve - Gentle bounce + scale */
+@keyframes bounceScale {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.3) translateY(-10px); }
+}
+
+/* ----------------------------- */
+/* ANIMATION CLASSES */
+/* ----------------------------- */
+.animate-runAcross {
+  animation: runAcross 8s linear infinite;
+}
+
+.animate-bloom {
+  animation: bloom 3s ease-in-out infinite;
+}
+
+.animate-floatUp {
+  animation: floatUp 6s linear infinite;
+}
+
+.animate-jumpscare {
+  animation: jumpscare 2s linear infinite;
+}
+
+.animate-bounceScale {
+  animation: bounceScale 4s ease-in-out infinite;
 }
