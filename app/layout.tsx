@@ -10,9 +10,27 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-gray-100 text-gray-900">
+      <body className="bg-gray-100 text-gray-900 relative overflow-x-hidden">
+
+        {/* ========================= */}
+        {/* NAVBAR */}
+        {/* ========================= */}
         <Navbar />
-        <main className="max-w-5xl mx-auto p-4">{children}</main>
+
+        {/* ========================= */}
+        {/* BACKGROUND LAYER (FULL-VIEWPORT) */}
+        {/* Place emojis / decorative background here to avoid max-width constraints */}
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          {/* Optional placeholder: your HomePage emoji layer can be injected here or elsewhere */}
+        </div>
+
+        {/* ========================= */}
+        {/* MAIN CONTENT */}
+        {/* Centered, constrained for readability */}
+        <main className="mx-auto p-4 sm:p-6 md:p-8 lg:p-12 max-w-full">
+          {children}
+        </main>
+
       </body>
     </html>
   );
