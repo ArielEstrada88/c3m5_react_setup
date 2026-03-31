@@ -26,28 +26,28 @@ export default function DashboardPage() {
         
         <div className="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
           <p className="text-sm text-gray-500">Total Workouts</p>
-          <h2 className="text-2xl font-bold flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
             💪 5
           </h2>
         </div>
 
         <div className="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
           <p className="text-sm text-gray-500">Total Hours</p>
-          <h2 className="text-2xl font-bold flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
             ⏱️ 4.5h
           </h2>
         </div>
 
         <div className="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
           <p className="text-sm text-gray-500">Calories Burned</p>
-          <h2 className="text-2xl font-bold flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
             🔥 1,200
           </h2>
         </div>
 
         <div className="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
           <p className="text-sm text-gray-500">Streak</p>
-          <h2 className="text-2xl font-bold flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
             ⚡ 3 days
           </h2>
         </div>
