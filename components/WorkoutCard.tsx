@@ -1,14 +1,20 @@
-// components/WorkoutCard.tsx
+interface WorkoutCardProps {
+  id: string;
+  title: string;
+  description: string;
+  image?: string;
+}
 
 export default function WorkoutCard({ id, title, description, image }: WorkoutCardProps) {
   return (
     <div className="
       group bg-white rounded-xl overflow-hidden
       shadow-md transition-all duration-300 ease-out
-      hover:-translate-y-2 hover:scale-[1.02]
+      hover:-translate-y-2
+      scale-100 sm:hover:scale-[1.02] md:hover:scale-[1.05]
       hover:shadow-2xl
       border border-transparent hover:border-indigo-300
-      relative
+      relative w-full max-w-full
     ">
 
       {/* Glow on hover */}

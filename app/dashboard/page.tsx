@@ -2,7 +2,7 @@ import WorkoutCard from '@/components/WorkoutCard';
 
 export default function DashboardPage() {
   return (
-    <div className="relative mt-6 space-y-8 overflow-hidden">
+    <div className="relative mt-6 space-y-8">
 
       {/* 🔥 Floating Emoji Background */}
       <div className="pointer-events-none absolute inset-0 -z-10 opacity-20">
